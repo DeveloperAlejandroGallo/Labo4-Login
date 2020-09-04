@@ -1,1 +1,16 @@
-<h1>Esta es la Pagina de Login</h1>
+<h1>Login</h1>
+<div>
+    <label>Usuario: </label>
+    <input type="text" id="txtUsuario" placeholder="Ingrese Usuario (admin)">
+</div>
+<div>
+    <label>Password: </label>
+    <input type="password" id="txtPassword" placeholder="Ingrese Password (admin)" (keydown.enter)="save($event)">
+</div>
+<div>
+    <label id="lblMensaje"></label>
+</div>
+<br>
+<div>
+    <input type="button" id="btnCalcular" value="Ingresar" (click)="btnIngresar_Click()">
+</div>
